@@ -2,7 +2,7 @@ title:             Welcome!
 email:             duongnd2016@gmail.com
 description:       A Blog written by Ocean Nguyen
 author:            Ocean Nguyen
-baseurl:           "/"
+baseurl:           ""
 url:               "https://oceannguyen.github.io"
 
 # Social Profiles
