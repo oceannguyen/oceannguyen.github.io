@@ -4,7 +4,7 @@ gem "jekyll", "~> 3.8.5"
 
 gem 'rake'
 
-gem "html-proofer"
+gem "html-proofer", "1.3.3"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
