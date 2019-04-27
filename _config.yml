@@ -2,8 +2,8 @@ title:             Welcome!
 email:             duongnd2016@gmail.com
 description:       A Blog written by Ocean Nguyen
 author:            Ocean Nguyen
-baseurl:           "oceannguyen.github.io"
-#url:               "https://duongnd.com"
+baseurl:           "/oceannguyen.github.io"
+url:               "http://localhost:4000"
 
 # Social Profiles
 twitter_username:  SBootstrap
