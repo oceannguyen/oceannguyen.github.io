@@ -4,4 +4,8 @@ set -e # halt script on error
 bundle install
 
 bundle exec jekyll build
-bundle exec htmlproofer --allow-hash-href ./_site
+bundle exec htmlproofer --check-html \
+                        --internal-domains localhost:4000 \
+                        --disable-external \
+                        --allow-hash-href \
+                         ./_site
