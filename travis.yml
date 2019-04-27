@@ -3,9 +3,9 @@ rvm:
   - 2.4.1
 
 before_script:
- - chmod +x ./cibuild
+ - chmod +x ./.cibuild
 
-script: ./cibuild
+script: ./.cibuild
 
 # branch whitelist, only for GitHub Pages
 branches:
