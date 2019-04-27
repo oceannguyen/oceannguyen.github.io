@@ -7,10 +7,10 @@ before_script:
 
 script: ./.cibuild
 
-# branch whitelist, only for GitHub Pages
-branches:
-  only:
-  - develop
+## branch whitelist, only for GitHub Pages
+#branches:
+#  only:
+#  - develop
 
 addons:
   apt:
