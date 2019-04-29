@@ -1,12 +1,15 @@
-title:             Welcome!
+title:             Ocean Nguyen's Blog
+welcome:           Welcome!
 email:             duongnd2016@gmail.com
-description:       A Blog written by Ocean Nguyen
+description:       Easy is not an option
 author:            Ocean Nguyen
 baseurl:           ""
-url:               "https://oceannguyen.github.io"
+url:               "https://duongnd.com"
+port:               3000
 
 # Social Profiles
-twitter_username:  SBootstrap
+instagram_username: oceanoppa
+twitter_username:
 github_username:   oceannguyen
 facebook_username: ndaiduong
 
