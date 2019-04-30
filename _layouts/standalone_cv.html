@@ -27,7 +27,10 @@
     <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
             <div class="container">
-                <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Creative CV</a>
+                <div class="navbar-translate">
+                    <a class="navbar-brand" href="#" rel="tooltip">
+                        <img src="/img/ocean_logo.png" width="150">
+                    </a>
                     <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navigation">
@@ -58,7 +61,28 @@
                     </div>
                     <div class="section">
                         <div class="container">
-                            <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+                            <div class="button-container">
+                                {% if site.facebook_username %}
+                                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/{{ site.facebook_username }}" rel="tooltip" title="Follow me on Facebook">
+                                    <i class="fa fa-facebook"></i></a>
+                                {% endif %}
+                                {% if site.twitter_username %}
+                                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.twitter.com/{{ site.twitter_username }}" rel="tooltip" title="Follow me on Twitter">
+                                    <i class="fa fa-twitter"></i></a>
+                                {% endif %}
+                                {% if site.linkedin_username %}
+                                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" rel="tooltip" title="Follow me on Google+">
+                                    <i class="fa fa-linkedin"></i></a>
+                                {% endif %}
+                                {% if site.instagram_username %}
+                                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/{{ site.instagram_username }}" rel="tooltip" title="Follow me on Instagram">
+                                    <i class="fa fa-instagram"></i></a>
+                                {% endif %}
+                                {% if site.github_username %}
+                                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/{{ site.github_username }}" rel="tooltip" title="Follow me on Instagram">
+                                    <i class="fa fa-github"></i></a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +112,7 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                                    <div class="col-sm-8">0399-935-2179</div>
+                                    <div class="col-sm-8">0399-352-179</div>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
@@ -219,18 +243,18 @@
                                             </figcaption>
                                         </figure></a></div>
                                     <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                        <figure class="cc-effect"><img src="/assets/cv/images/project-2.1.jpeg" alt="Image"/>
+                                        <figure class="cc-effect"><img src="/assets/cv/images/project-2.1.png" alt="Image"/>
                                             <figcaption>
-                                                <div class="h4">ESB Project</div>
+                                                <div class="h4">Bottle Line Project</div>
                                                 <p>Web Development</p>
                                             </figcaption>
                                         </figure></a></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                        <figure class="cc-effect"><img src="/assets/cv/images/project-3.1.png" alt="Image"/>
+                                        <figure class="cc-effect"><img src="/assets/cv/images/project-3.1.jpeg" alt="Image"/>
                                             <figcaption>
-                                                <div class="h4">Bottle Line Project</div>
+                                                <div class="h4">ESB Project</div>
                                                 <p>Web Development</p>
                                             </figcaption>
                                         </figure></a></div>
@@ -524,7 +548,7 @@
                                                 <p class="mb-0"><strong>Address </strong></p>
                                                 <p class="pb-2">49, Me Tri, Nam Tu Liem, Ha Noi</p>
                                                 <p class="mb-0"><strong>Phone</strong></p>
-                                                <p class="pb-2">0399-935-2179</p>
+                                                <p class="pb-2">0399-352-179</p>
                                                 <p class="mb-0"><strong>Email</strong></p>
                                                 <p>duongnd2016@gmail.com</p>
                                             </div>
@@ -539,7 +563,28 @@
         </div></div>
 </div>
 <footer class="footer">
-    <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+    <div class="container text-center">
+        {% if site.facebook_username %}
+        <a class="cc-facebook btn btn-link" href="https://www.facebook.com/{{ site.facebook_username }}">
+            <i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.twitter_username %}
+        <a class="cc-twitter btn btn-link " href="https://www.twitter.com/{{ site.twitter_username }}">
+            <i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a class="cc-linkedin btn btn-link" href="#">
+            <i class="fa fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.instagram_username %}
+        <a class="cc-instagram btn btn-link" href="https://www.instagram.com/{{ site.instagram_username }}">
+            <i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.github_username %}
+        <a class="cc-github btn btn-link" href="https://github.com/{{ site.github_username }}">
+            <i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
+        {% endif %}
+    </div>
     <div class="h4 title text-center">Ocean Nguyen</div>
     <div class="text-center text-muted">
         <p>&copy; Ocean Nguyen. All rights reserved.</p>
